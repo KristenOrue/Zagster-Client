@@ -1,1 +1,5 @@
-alert("Sweet Potatoes, Sweet potatoes")
+$(updateView)
+
+function updateView() {
+  alert("Using jQuery!")
+}
