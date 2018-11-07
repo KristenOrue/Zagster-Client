@@ -1,13 +1,13 @@
 
-const BASE_URL = "http://zagster-service.herokuapp.com"
+const BASE_URL = "https://zagster-service.herokuapp.com"
 $(updateView)
 
 function updateView() {
-    $.getJSON(BASE_URL + "/rides/count", updateRideCount)
-  alert("hopethisworks!")
+    $.getJSON(BASE_URL + "/rides/count", updateridecount)
+ 
 }
 
-function updateRideCount(data) {
+function updateridecount(data) {
     numberOfRides = data.count
-    $("h2#rideCount").html(numberOfRides)
+    $("h2#ridecount").html(numberOfRides)
 }
