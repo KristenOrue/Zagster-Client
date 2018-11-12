@@ -9,5 +9,9 @@ h2 {
 }
 P {
 margin: "0px";
+text-align: "center";
 
+}
+img {
+    border: 6px solid orange
 }

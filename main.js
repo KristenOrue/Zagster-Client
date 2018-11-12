@@ -11,3 +11,5 @@ function updateridecount(data) {
     numberOfRides = data.count
     $("h2#ridecount").html(numberOfRides)
 }
+
+
