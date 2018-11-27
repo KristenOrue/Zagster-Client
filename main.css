@@ -15,3 +15,7 @@ text-align: "center";
 img {
     border: 6px solid orange
 }
+.chartContainer {
+max-width: 75%;
+max-height: 75%;
+}
