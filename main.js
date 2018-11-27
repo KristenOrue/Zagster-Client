@@ -5,16 +5,19 @@ $(updateView)
 
 function updateView() {
 $.getJSON(BASE_URL + "/rides/count", updateridecount);
-$.getJSON(BASE_URL + "/rides/count/per_year", displayAnnualCharts);
-//displayGraph();
+$.getJSON(BASE_URL + "/rides/count/per_year", displayAnnualChart);
+//displayMonthlyChart();
 }
 
 function updateridecount(data) {
     numberOfRides = data.count
     $("h2#ridecount").html(numberOfRides)
 }
+function displayAnnualChart(data) {
 
-function displayAnnualCharts(data) {
+}
+
+function displayAnnualChart(data) {
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -24,11 +27,8 @@ var chart = new Chart(ctx, {
     data: {
         labels: ["2016", "2017", "2018"],
         datasets: [{
-            label: "Annual Rides per Year",
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgba(54,162,235,0.2)',
-            ],
+            label: "Annual Rides per year",
+            backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: [ data['2016'], data['2017'], data['2018'] ],
         }]

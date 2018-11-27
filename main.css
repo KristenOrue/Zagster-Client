@@ -1,6 +1,16 @@
 body {
 
-    font-family:"HelveticaNeue", "Arial", sans-serif;
+    font-family:"HelveticaNeue", "Arial", sans-serif; 
+    color: grey;
+    background-color: black;
+    border: palevioletred, 3px;
+    text-align: center
+
+}
+
+h1 {
+    font-size: "7emj";
+    font-weight: "bold";
 }
 
 h2 {
@@ -12,8 +22,11 @@ margin: "0px";
 text-align: "center";
 
 }
+
+
 img {
-    border: 6px solid orange
+    border: 9px solid grey
+    
 }
 .chartContainer {
 max-width: 75%;
