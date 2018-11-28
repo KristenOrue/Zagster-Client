@@ -58,7 +58,30 @@ monthlyCounts.push(data[2018] [i] [i+1]);
 }
 console.log(monthlyCounts);
 
-var ctx = document.getElementById('ridesPerMonthChart').getContext('2d');
+/*var ctx = document.getElementById('ridesPerMonthChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+        datasets: [{
+            label: "Rides Per Month",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: monthlyCounts,
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});*/
+
+}
+
+function displayMonthlyChart() {
+    var ctx = document.getElementById('ridesPerMonthChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'bar',
@@ -77,8 +100,4 @@ var chart = new Chart(ctx, {
     // Configuration options go here
     options: {}
 });
-
-}
-function printData(data) {
-    
 }
