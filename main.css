@@ -28,7 +28,9 @@ img {
     border: 9px solid grey
     
 }
+
 .chartContainer {
 max-width: 75%;
 max-height: 75%;
+text-align: center 
 }
