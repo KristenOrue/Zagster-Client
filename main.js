@@ -26,7 +26,7 @@ function displayAnnualChart(data) {
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'bar',
+    type: 'line',
 
     // The data for our dataset
     data: {
@@ -67,7 +67,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25'],
+        labels: ['9/2016','10/2016','11/2016','12/2016','1/2017','2/2017','3/2017','4/2017','5/2017','6/2017','7/2017','8/2017','9/2017','10/2017','11/2017','12/2017','1/2018','2/2018','3/2018','4/2018','5/2018','6/2018','7/2018','8/2018','9/2018'],
         datasets: [{
             label: "Rides Per Month",
             backgroundColor: 'rgb(255, 99, 132)',
