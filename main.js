@@ -47,37 +47,16 @@ var chart = new Chart(ctx, {
 
 
 function prepareMonthlyData(data) {
-for (var i = 0; i <=3; ++i){
-monthlyCounts.push(data[2016] [i] [i+9]);
-}
-for (var i = 0; i <=11; ++i){
-monthlyCounts.push(data[2017] [i] [i+1]);
-}
-for (var i = 0; i <=9; ++i){
-monthlyCounts.push(data[2018] [i] [i+1]);
-}
-console.log(monthlyCounts);
-
-/*var ctx = document.getElementById('ridesPerMonthChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
-
-    // The data for our dataset
-    data: {
-        labels: ['1','2','3','4','5','6','7','8','9','10','11','12'],
-        datasets: [{
-            label: "Rides Per Month",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: monthlyCounts,
-        }]
-    },
-
-    // Configuration options go here
-    options: {}
-});*/
-
+    for (var i = 0; i <=3; ++i){
+        monthlyCounts.push(data[2016] [i] [i+9]);
+    }
+    for (var i = 0; i <=11; ++i){
+        monthlyCounts.push(data[2017] [i] [i+1]);
+    }
+    for (var i = 0; i <=9; ++i){
+        monthlyCounts.push(data[2018] [i] [i+1]);
+    }
+    console.log(monthlyCounts);
 }
 
 function displayMonthlyChart() {
@@ -88,7 +67,7 @@ var chart = new Chart(ctx, {
 
     // The data for our dataset
     data: {
-        labels: ['1','2','3','4','5','6','7','8','9','10','11','12'],
+        labels: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25'],
         datasets: [{
             label: "Rides Per Month",
             backgroundColor: 'rgb(255, 99, 132)',
