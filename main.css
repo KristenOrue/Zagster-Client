@@ -11,12 +11,12 @@ body {
 h1 {
     font-size: "7emj";
     font-weight: "bold";
+    color: white;
 }
 
 h2 {
     font-size: "4emj";
     margin: "0px";
-    text-emphasis-color: white;
 }
 P {
 margin: "0px";
@@ -26,7 +26,7 @@ text-align: "center";
 
 
 img {
-    border: 9px solid grey
+    border: 9px solid whitesmoke;
     
 }
 
@@ -38,5 +38,6 @@ margin-bottom: 50px;
 margin-left:auto;
 margin-right:auto;
 border:3px solid green;
-text-align: center 
+float: center 
+
 }
