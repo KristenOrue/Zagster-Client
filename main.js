@@ -56,6 +56,7 @@ monthlyCounts.push(data[2017] [i] [i+1]);
 for (var i = 0; i <=9; ++i){
 monthlyCounts.push(data[2018] [i] [i+1]);
 }
+console.log(monthlyCounts);
 
 var ctx = document.getElementById('ridesPerMonthChart').getContext('2d');
 var chart = new Chart(ctx, {
